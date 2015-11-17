@@ -1,0 +1,9 @@
+{% extends layout %}
+
+{% block body_content %}
+    <h5>{{ message }}</h5>
+
+    <form name="input" action="{{ url('hit') }}" method="get">
+        <input type="submit" value="hit a bee">
+    </form>
+{% endblock %}
